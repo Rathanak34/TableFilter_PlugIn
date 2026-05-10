@@ -7,16 +7,19 @@ ________________________________________
 TableFilter MUST be initialized only after the entire page (including the table) is fully rendered.
 If the library is called before the table exists in the DOM, header buttons and event handlers will not be attached correctly.
 Correct ways to initialize
+
 1. Place initialization at the bottom of the page
 <script src="tablefilter.js"></script>
 <script>
   TableFilter.applyTo('#myTable', {...});
 </script>
 </body>
+
 2. Use DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
   TableFilter.applyTo('#myTable', {...});
 });
+
 3. Use jQuery ready
 $(function () {
   TableFilter.applyTo('#myTable', {...});
@@ -166,9 +169,6 @@ Recommended extension points:
 •	Improve date parsing with date-fns
 •	Add destroy() method for full teardown
 •	Add ARIA attributes for accessibility
-________________________________________
-License
-MIT License (or your preferred license)
 ________________________________________
 Final Notes
 TableFilter is intentionally simple, readable, and flexible. It is ideal when you need filtering without heavy dependencies like DataTables, while still allowing future extension and customization.
