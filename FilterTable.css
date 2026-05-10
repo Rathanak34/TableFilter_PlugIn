@@ -1,0 +1,208 @@
+﻿.date-input {
+    background-color: #fff;
+}
+
+th {
+    position: relative;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.modal-dialog {
+    max-width: 500px;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.filter-indicator {
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    font-size: 8px;
+    color: #dc3545;
+}
+
+.btn-filter-active {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+.filter-status {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.filter-applied {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.modal-footer {
+    justify-content: space-between;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+input[type="date"] {
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+        background: transparent;
+        bottom: 0;
+        color: transparent;
+        cursor: pointer;
+        height: auto;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+}
+
+.date-wrapper {
+    position: relative;
+}
+
+.date-wrapper:after {
+  content: "📅";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+/* Root wrapper for custom select component */
+.sf-select2-wrapper {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* Main display box (looks like a select input) */
+.sf-select2-display {
+    cursor: pointer;
+    min-height: 50px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+/* Left side inside display (tags / selected values container) */
+.sf-select2-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+    flex: 1;
+}
+/* Caret (arrow) inside display */
+.sf-select2-caret {
+    margin-left: 8px;
+    color: #666;
+    font-size: 12px;
+}
+/* Select2-style dropdown (TableFilter) */
+.sf-select2-dropdown {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #fff;
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    max-height: 220px;
+    overflow: auto;
+    display: none;
+    box-sizing: border-box;
+}
+/* Search wrapper inside select-style dropdown */
+.sf-select2-search-wrap {
+    padding: 6px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Search input inside dropdown */
+.sf-select2-search-input {
+    width: 100%;
+    box-sizing: border-box;
+}
+/* Option item inside select-style dropdown */
+.sf-select2-option {
+    padding: 8px;
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+    /* Hover state */
+.sf-select2-option:hover {
+  background-color: rgb(235, 240, 255);
+}
+
+/* Active / selected state (optional but recommended) */
+.sf-select2-option.is-selected {
+   background-color: rgb(227, 236, 255);
+   color: rgb(31, 58, 147);
+}
+.sf-select2-option:focus {
+   outline: none;
+   background-color: rgb(220, 230, 250);
+}
+/* Selected value tag (multi-select) */
+.sf-tag {
+    background-color: #f1f3f5;
+    border: 1px solid #e0e0e0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+/* Remove (×) button inside selected tag */
+.sf-tag-remove {
+    cursor: pointer;
+    margin-left: 6px;
+    color: #666;
+    font-size: 12px;
+    line-height: 1;
+}
+
+    /* Hover state */
+.sf-tag-remove:hover {
+   color: rgb(31, 58, 147); /* matches #1f3a93 */
+}
+
+/* TableFilter – active sort button */
+.sort-btn.active {
+    outline: 2px solid rgba(0,123,255,0.25);
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.06);
+    background-color: rgb(220, 230, 250);
+    border: 1px solid rgb(160, 185, 235);
+    color: rgb(31, 58, 147);
+}
