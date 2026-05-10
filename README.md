@@ -3,7 +3,7 @@ A lightweight, client-side JavaScript library that adds per-column filtering to 
 TableFilter injects filter buttons into table headers, displays a Bootstrap modal for configuring filters (Text / Select / Multi-select / Range), persists filters in sessionStorage, and shows or hides table rows based on active filters.
 This README is written to be easy to understand for developers who just want to use the library, while also being detailed enough for developers who want to maintain or extend it.
 ________________________________________
-⚠️ Important Initialization Rule
+##Important Initialization Rule
 TableFilter MUST be initialized only after the entire page (including the table) is fully rendered.
 If the library is called before the table exists in the DOM, header buttons and event handlers will not be attached correctly.
 Correct ways to initialize
